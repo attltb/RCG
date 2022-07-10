@@ -13,6 +13,7 @@ Resource Collection Generator(RCG)는 저장할 리소스의 이름과 경로가
 RCG는 이러한 외부 리소스 파일을 더 쉽게 만들 수 있게 해 주는 프로그램입니다. 다음과 같은 기능들이 지원됩니다.
 
 - 파일 하나에 여러 개의 리소스를 저장할 수 있습니다. 이는 프로그램이 의존하는 리소스 파일의 수를 줄여서 사용자가 프로그램을 더 쉽게 관리할 수 있게 해 줍니다. 각각의 리소스는 고유의 이름을 가지며 이름을 통해 로드됩니다.
+
 - 일부 리소스의 경우 프로그램에서 이용하기 쉬운 형태로 미리 데이터 포맷을 바꾸어 저장할 수 있습니다. 가령 이미지는 파랑, 초록, 빨강, 알파의 4개의 8비트 채널을 갖는 픽셀당 32비트의 비트맵 형태가 가장 프로그램에서 이용하기 쉬우며, 이것은 Bitmap32라는 이름의 포맷으로 제공됩니다.
 
 
@@ -31,7 +32,7 @@ RCG는 이러한 외부 리소스 파일을 더 쉽게 만들 수 있게 해 주
 
 4. Cmake-gui를 실행시킨 후 (1)에 저장소가 복제된 폴더를, (2)에 프로젝트를 설치할 폴더를 입력하고 (3)을 클릭합니다.
 
-   <img align="left" src="doc/Cmake.kor.png"><br clear="left"/>
+   <p align="left"><img src="doc/Cmake.kor.png"></p>
 
 5. 대화 상자에서 RCG 프로젝트를 빌드할 때 사용할 빌드 시스템을 선택하십시오. 이 단계를 통과하려면 최소한 하나 이상의 C++ 빌드 시스템이 이미 설치되어 있어야 합니다. 
 
@@ -53,7 +54,7 @@ RCG는 이러한 외부 리소스 파일을 더 쉽게 만들 수 있게 해 주
 
 텍스트 파일 안에는 리소스 통합 파일에 들어갈 각 리소스 항목에 대한 정보들이 여러 줄에 걸쳐서 입력됩니다. 다음 그림은 한 항목을 정의하는 방법을 보여줍니다. 
 
-<img align="left" src="doc/TextSample.kor.png"><br clear="left"/>
+<p align="left"><img src="doc/TextSample.kor.png"></p>
 
 (1)은 향후 다른 프로그램에서 이 리소스 데이터를 로드할 때 참조할 이름으로, 반드시 입력되어야 하며 중복될 수 없습니다.
 
@@ -95,8 +96,6 @@ void someFunction() {
 
 ## 기여자
 
-<a href="https://github.com/attltb"><img src="https://avatars.githubusercontent.com/u/77376670?v=4" width="100px"></a>
-
-<a href="https://github.com/attltb">attltb</a> - 프로그램 설계, 코딩 등 작업 전반 <br clear="left">
+<p align="left"><a href="https://github.com/attltb"><img align="left" src="https://avatars.githubusercontent.com/u/77376670" width="100px;" alt=""/></a> <a href="https://github.com/attltb">attltb</a> - 프로그램 설계, 코딩 등 작업 전반</p><br clear="left"/><br>
 
 모든 종류의 기여는 환영합니다.

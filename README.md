@@ -6,6 +6,7 @@ Resource Collection Generator(RCG) is a program to make resource collection file
 
 ## README Editions
 
-- [한국어](README.kor.md)
 - [English](README.eng.md)
+
+- [한국어](README.kor.md)
 

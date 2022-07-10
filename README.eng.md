@@ -31,7 +31,7 @@ If you want to build the binary from the source code, follow the steps below.
 
 4. Run Cmake-gui, enter the folder where the repository is cloned in (1) and the folder where the project will be installed in (2), and click (3). 
 
-   <img align="left" src="doc\Cmake.eng.png"><br clear="left"/>
+   <p align="left"><img src="doc\Cmake.eng.png"></p>
 
 5. Select a build system you want to use to build the RCG project. At least one C++ build system must already be installed to pass this step.
 
@@ -53,7 +53,7 @@ To create a resource collection file, one need data files, such as images, sound
 
 In the text file, information about each resource item that will be included in the resource collection file is entered. The following figure shows how to define one resource item.
 
-<img align="left" src="doc\TextSample.eng.png"><br clear="left"/>
+<p align="left"><img src="doc\TextSample.eng.png"></p>
 
 (1) is a name that will be refered by target programs to load this resource. It must be entered and cannot be duplicated.
 
@@ -95,8 +95,6 @@ For other usage and various details, please refer to the actual source files in 
 
 ## Contributors
 
-<a href="https://github.com/attltb"><img src="https://avatars.githubusercontent.com/u/77376670?v=4" width="100px;" alt=""/></a>
-
-<a href="https://github.com/attltb">attltb</a> - Program design, coding, etcs.
+<p align="left"><a href="https://github.com/attltb"><img align="left" src="https://avatars.githubusercontent.com/u/77376670" width="100px;" alt=""/></a> <a href="https://github.com/attltb">attltb</a> - program design, coding, etcs.</p><br clear="left"/><br>
 
 Contributions of any kind welcome.
