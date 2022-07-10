@@ -1,0 +1,18 @@
+IBlocks_c : "resource\I_c.png", \
+	"resource\O_c.png", \
+	"resource\L_c.png", \
+	"resource\J_c.png", \
+	"resource\T_c.png", \
+	"resource\S_c.png", \
+	"resource\Z_c.png" as Bitmap32
+
+IBlocks_m : "resource\I_m.png", \
+	"resource\O_m.png", \
+	"resource\L_m.png", \
+	"resource\J_m.png", \
+	"resource\T_m.png", \
+	"resource\S_m.png", \
+	"resource\Z_m.png" as Bitmap32
+
+IBlocks_highlight : "resource\h.png" as Bitmap32
+IBlocks_X : "resource\X.png" as Bitmap32

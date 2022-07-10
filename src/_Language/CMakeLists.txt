@@ -1,0 +1,5 @@
+if(${RCG_LANGUAGE} MATCHES "Korean")
+	ADD_SUBDIRECTORY (Korean)
+elseif(${RCG_LANGUAGE} MATCHES "English")
+	ADD_SUBDIRECTORY (English)
+endif() 
