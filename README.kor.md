@@ -31,7 +31,7 @@ RCG는 이러한 외부 리소스 파일을 더 쉽게 만들 수 있게 해 주
 
 4. Cmake-gui를 실행시킨 후 (1)에 저장소가 복제된 폴더를, (2)에 프로젝트를 설치할 폴더를 입력하고 (3)을 클릭합니다.
 
-   <img align="left" src="doc/Cmake.kor.png" width="692" height="588"><br clear="left">
+   <img align="left" src="doc/Cmake.kor.png"><br clear="left"/>
 
 5. 대화 상자에서 RCG 프로젝트를 빌드할 때 사용할 빌드 시스템을 선택하십시오. 이 단계를 통과하려면 최소한 하나 이상의 C++ 빌드 시스템이 이미 설치되어 있어야 합니다. 
 
@@ -53,7 +53,7 @@ RCG는 이러한 외부 리소스 파일을 더 쉽게 만들 수 있게 해 주
 
 텍스트 파일 안에는 리소스 통합 파일에 들어갈 각 리소스 항목에 대한 정보들이 여러 줄에 걸쳐서 입력됩니다. 다음 그림은 한 항목을 정의하는 방법을 보여줍니다. 
 
-<img align="left" src="doc/TextSample.kor.png"><br clear="left">
+<img align="left" src="doc/TextSample.kor.png"><br clear="left"/>
 
 (1)은 향후 다른 프로그램에서 이 리소스 데이터를 로드할 때 참조할 이름으로, 반드시 입력되어야 하며 중복될 수 없습니다.
 
