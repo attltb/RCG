@@ -95,8 +95,8 @@ void someFunction() {
 
 ## 기여자
 
-<a href="https://github.com/attltb"><img src="https://avatars.githubusercontent.com/u/77376670?v=4" width="100px;" alt=""/></a>
+<a href="https://github.com/attltb"><img src="https://avatars.githubusercontent.com/u/77376670?v=4" width="100px;" alt=""/></a><br clear="left">
 
-<a href="https://github.com/attltb">attltb</a> - 프로그램 설계, 코딩 등 작업 전반 <br clear="left">
+<a href="https://github.com/attltb">attltb</a> - 프로그램 설계, 코딩 등 작업 전반
 
 모든 종류의 기여는 환영합니다.
