@@ -31,7 +31,7 @@ If you want to build the binary from the source code, follow the steps below.
 
 4. Run Cmake-gui, enter the folder where the repository is cloned in (1) and the folder where the project will be installed in (2), and click (3). 
 
-<img align="left" src="doc\Cmake.eng.png"><br clear="left"/>
+   <img align="left" src="doc\Cmake.eng.png"><br clear="left"/>
 
 5. Select a build system you want to use to build the RCG project. At least one C++ build system must already be installed to pass this step.
 
