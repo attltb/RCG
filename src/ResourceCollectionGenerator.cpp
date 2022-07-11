@@ -121,27 +121,30 @@ MemoryChunk GetBitmap32(const char* path, const char* path_abs) {
 }
 
 bool GetData(ResourceCollectionGenerator& generator, string line, const char* path_folder) {
-	Syntax_AddResourseElement parsed = parse(line);
+	Syntax syntax = parse(line);
+	if (syntax.kind() != Syntax_::Kind::AddResourseElement) return true;
+
+	Syntax_AddResourseElement* syntax_addResourceElement = syntax.as_AddResourseElement();
 	vector<MemoryChunk> chunks;
-	switch (parsed.dataKind) {
+	switch (syntax_addResourceElement->dataKind) {
 	case ResourceKind::Binary:
-		for (unsigned int i = 0; i < parsed.paths.size(); i++) {
-			const string path_abs = parsed.paths[i] + string(path_folder);
-			MemoryChunk chunk = GetBinary(parsed.paths[i].c_str(), path_abs.c_str());
+		for (unsigned int i = 0; i < syntax_addResourceElement->paths.size(); i++) {
+			const string path_abs = syntax_addResourceElement->paths[i] + string(path_folder);
+			MemoryChunk chunk = GetBinary(syntax_addResourceElement->paths[i].c_str(), path_abs.c_str());
 			if (!chunk.size) return false;
 			chunks.push_back(chunk);
 		}
 		break;
 	case ResourceKind::Bitmap32:
-		for (unsigned int i = 0; i < parsed.paths.size(); i++) {
-			const string path_abs = parsed.paths[i] + string(path_folder);
-			MemoryChunk chunk = GetBitmap32(parsed.paths[i].c_str(), path_abs.c_str());
+		for (unsigned int i = 0; i < syntax_addResourceElement->paths.size(); i++) {
+			const string path_abs = syntax_addResourceElement->paths[i] + string(path_folder);
+			MemoryChunk chunk = GetBitmap32(syntax_addResourceElement->paths[i].c_str(), path_abs.c_str());
 			if (!chunk.size) return false;
 			chunks.push_back(chunk);
 		}
 		break;
 	}
-	generator.addResourceElement(parsed.name, parsed.dataKind, chunks);
+	generator.addResourceElement(syntax_addResourceElement->name, syntax_addResourceElement->dataKind, chunks);
 	return true;
 }
 bool GenerateOutput(const char* filename_o, ResourceCollectionGenerator& generator) {

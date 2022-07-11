@@ -216,9 +216,9 @@ ResourceKind get_datakind(vector<pair<string, TokenType>>& tokens, unsigned int 
 	return ResourceKind::Invalid;
 }
 
-Syntax_AddResourseElement parse(const string& input) {
+Syntax parse(const string& input) {
 	vector<pair<string, TokenType>> tokens = get_tokens(input);
-	if (tokens.empty()) return Syntax_AddResourseElement();
+	if (tokens.empty()) return Syntax::annotation();
 
 	try {
 		string name = get_identifier(tokens, 0);
@@ -237,15 +237,15 @@ Syntax_AddResourseElement parse(const string& input) {
 				break;
 			}
 		}
-		if (i == tokens.size()) return Syntax_AddResourseElement(ResourceKind::Binary, name, paths);
+		if (i == tokens.size()) return Syntax::addResourseElement(ResourceKind::Binary, name, paths);
 
 		if (!check_token(tokens, i, "as")) throw 4;
 		ResourceKind dataKind = get_datakind(tokens, i + 1);
 		if (dataKind == ResourceKind::Invalid) throw 5;
-		return Syntax_AddResourseElement(dataKind, name, paths);
+		return Syntax::addResourseElement(dataKind, name, paths);
 	}
 	catch (...) {
 		cout << getErrorString_CannotParseALine(input) << endl;
-		return Syntax_AddResourseElement();
+		return Syntax::annotation();
 	}
 }
